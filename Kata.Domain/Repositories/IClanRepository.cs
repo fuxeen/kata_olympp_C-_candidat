@@ -11,7 +11,7 @@ namespace Kata.Domain.Repositories
     {
         Task<IEnumerable<Clan>> GetAllClansAsync();
         Task<Clan?> GetClanByNameAsync(string name);
-        Task<Clan?> GetArmyByNameClanAsync(string name);
+        Task<Army?> GetArmyByNameAsync(string armyName);
         Task AddArmyAsync(string nameClan,Army army);
         Task UpdateArmyAsync(string nameClan,string armyName, Army army);
 

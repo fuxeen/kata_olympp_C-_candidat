@@ -13,3 +13,4 @@
 /Kata.Infrastructure/obj
 /Kata.Tests/bin/Debug/net8.0
 /Kata.Tests/obj
+.vscode/

@@ -24,7 +24,7 @@ namespace Kata.API.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, "Internal server error");
+                return StatusCode(500, "Internal server error :" + ex.Message);
             }
         }
         [HttpGet("{name}")]
@@ -41,7 +41,7 @@ namespace Kata.API.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, "Internal server error");
+                return StatusCode(500, "Internal server error :" + ex.Message);
             }
         }
         #endregion
@@ -60,7 +60,7 @@ namespace Kata.API.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, "Internal server error");
+                return StatusCode(500, "Internal server error : " + ex.Message);
             }
         }
         #endregion
@@ -79,7 +79,7 @@ namespace Kata.API.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, "Internal server error");
+                return StatusCode(500, "Internal server error :" + ex.Message);
             }
 
         }
@@ -99,7 +99,7 @@ namespace Kata.API.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, "Internal server error");
+                return StatusCode(500, "Internal server error :" + ex.Message);
             }
         }
         #endregion

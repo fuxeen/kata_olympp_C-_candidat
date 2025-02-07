@@ -1,5 +1,4 @@
-﻿using Kata.Domain.Entities;
-using Kata.Domain.Interfaces;
+﻿using Kata.Domain.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Kata.API.Controllers

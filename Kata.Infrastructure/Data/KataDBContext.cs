@@ -20,7 +20,10 @@ namespace Kata.Infrastructure.Data
         {
             base.OnModelCreating(modelBuilder);
 
-           /// TODO: DefineModel
+            // Fluent API configuration for entity relationships
+            modelBuilder.Entity<Clan>().HasKey(clan => clan.Name);
+            modelBuilder.Entity<Army>().HasKey(army => army.ID);         
+            modelBuilder.Entity<BattleReport>().HasKey(battle => battle.ID);
         }
     }
 }
